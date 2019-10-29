@@ -17,5 +17,10 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/ZloyRob/react-native-appmetrica.git", :tag => "v#{s.version}" }
   s.source_files  = "ios/**/*.{h,m}"
 
+  s.weak_frameworks        = 'YandexMobileMetrica'
+  s.pod_target_xcconfig    = {
+    'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/YandexMobileMetrica/dynamic/**"',
+  }
+
   s.dependency 'React'
 end
