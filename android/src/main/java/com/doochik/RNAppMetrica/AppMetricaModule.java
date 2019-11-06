@@ -2,7 +2,7 @@ package com.doochik.RNAppMetrica;
 
 import android.app.Activity;
 import android.app.Application;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.util.Log;
 
 import com.facebook.react.bridge.ReactApplicationContext;
